@@ -1,2 +1,2 @@
 # bypass
-Bypass strict organization web blocking rules... assuming Bypass itself isn't blocked.
+Bypass is a simple browser proxy experiment.
