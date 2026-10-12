@@ -26,7 +26,7 @@ function go() {
         return;
     };
     document.getElementById("result").innerHTML = "";
-    const frame = `https://script.google.com/macros/s/AKfycbxjvdwpY0-jA9S5eI2vXPxR7aMFSLeKEwRcaTslnoUE3xJtNIf31VTzsyEEKPd-SgpM/exec?target=${url}`;
+    const frame = `https://script.google.com/macros/s/AKfycbx6u6445vhDzbGa9wvpiuB5kGul1HiAFZLMN2VaU9e0XxX3ddU-S3SZmA0BJVK7IH1u/exec?target=${url}`;
     const iframe = document.createElement("iframe");
     iframe.src = frame;
     iframe.id = "frame";
