@@ -14,6 +14,8 @@ window.addEventListener("keydown", (event) => {
     } else if (event.ctrlKey && event.altKey && event.key.toLowerCase() === "f") {
         document.getElementById("url").scrollIntoView();
         document.getElementById("url").focus();
+    } else if (event.ctrlKey && event.altKey && event.key.toLowerCase() === "r") {
+        document.getElementById("url").value = "";
     }
 })
 
