@@ -3,13 +3,20 @@
     --colorBackground: #011306;
     --colorForeground: #e4f1e7;
     --colorAccent: #d7eadb;
+    --font: "Kode Mono", monospace;
 }
 body {
     background-color: var(--colorBackground);
     color: var(--colorForeground);
-    font-family: "Kode Mono", monospace;
+    font-family: var(--font);
     font-weight: 500;
     font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 3vh;
 }
 
 iframe {
@@ -17,4 +24,13 @@ iframe {
     outline: none;
     border: none;
     border-radius: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: var(--colorForeground);
+    color: var(--colorBackground);
+    font-family: var(--font);
 }
