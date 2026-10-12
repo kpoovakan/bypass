@@ -1,9 +1,18 @@
 "use strict";
+globalThis.devMode = 0;
 document.getElementById("url").addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         go();
     }
 });
+window.addEventListener("keydown", (event) => {
+    if (event.ctrlKey && event.altKey && event.key.toLowerCase() === "d") {
+        globalThis.devMode = 1;
+        const frame = document.getElementById("frame");
+        if (!frame) return;
+        frame.style.pointerEvents = "auto";
+    }
+})
 
 function go() {
     const url = document.getElementById("url").value;
@@ -15,8 +24,12 @@ function go() {
     const frame = `https://script.google.com/macros/s/AKfycbxjvdwpY0-jA9S5eI2vXPxR7aMFSLeKEwRcaTslnoUE3xJtNIf31VTzsyEEKPd-SgpM/exec?target=${url}`;
     const iframe = document.createElement("iframe");
     iframe.src = frame;
+    iframe.id = "frame";
     document.getElementById("result").appendChild(iframe);
     iframe.setAttribute("onload", "loaded(this)");
+    if (globalThis.devMode) {
+        iframe.style.pointerEvents = "auto";
+    }
 }
 
 function urlValid(urlString) {
