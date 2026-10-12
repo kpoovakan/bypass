@@ -11,6 +11,9 @@ window.addEventListener("keydown", (event) => {
         const frame = document.getElementById("frame");
         if (!frame) return;
         frame.style.pointerEvents = "auto";
+    } else if (event.ctrlKey && event.altKey && event.key.toLowerCase() === "f") {
+        document.getElementById("url").scrollIntoView();
+        document.getElementById("url").focus();
     }
 })
 
@@ -30,6 +33,7 @@ function go() {
     if (globalThis.devMode) {
         iframe.style.pointerEvents = "auto";
     }
+    document.getElementById("url").focus();
 }
 
 function urlValid(urlString) {
