@@ -11,6 +11,7 @@ function go() {
         alert("Make sure you include the HTTP or HTTPS at the beginning of the URL.");
         return;
     };
+    document.getElementById("result").innerHTML = "";
     const frame = `https://script.google.com/macros/s/AKfycbxjvdwpY0-jA9S5eI2vXPxR7aMFSLeKEwRcaTslnoUE3xJtNIf31VTzsyEEKPd-SgpM/exec?target=${url}`;
     const iframe = document.createElement("iframe");
     iframe.src = frame;
