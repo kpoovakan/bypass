@@ -49,7 +49,7 @@ iframe {
     border-radius: none;
 }
 
-input {
+.inputContainer input {
     border: none;
     outline: none;
     border-radius: 2px;
@@ -58,6 +58,7 @@ input {
     font-family: var(--font);
     width: 90vw;
     padding: 13px;
+    flex-grow: 1;
 }
 input:focus {
     border: none;
@@ -67,4 +68,14 @@ input:focus {
     width: 100vw;
     padding: 5vw;
     box-sizing: border-box;
+    display: flex;
+    gap: 2px;
+}
+.inputContainer img {
+    border-radius: 2px !important;
+    border: none;
+    outline: none;
+}
+.inputContainer img:hover {
+    cursor: pointer;
 }
