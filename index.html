@@ -12,13 +12,16 @@
     </head>
     <body>
         <div class="heading">
-            <h1 onclick="menu()">Bypass</h1>
+            <h1>Bypass</h1>
             <a href="/">kpoovakan</a>
             <a href="https://github.com/kpoovakan/bypass/#bypass">source</a>
         </div>
         <div class="inputContainer">
-            <input id="url" type="text" autocomplete="on" placeholder="https://kpoovakan.github.io" autofocus>
+            <input id="url" type="text" placeholder="https://kpoovakan.github.io" autofocus>
             <img src="indexfiles/arrow.svg" alt="go!" onclick="go()"/>
+        </div>
+        <div id="result" class="result">
+            <p>Bypass is a simple browser proxy experiment for static site viewing. Enter the URL of any site with its HTTP (or HTTPS) and read the contents of the site. Clicking on links breaks out of the proxy, so enable developer mode to copy links and paste them back into the URL area. View the README for more info regarding developer mode.</p>
         </div>
     </body>
 </html>
