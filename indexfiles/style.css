@@ -47,6 +47,9 @@ iframe {
     outline: none;
     border: none;
     border-radius: none;
+    width: 100vw;
+    height: 3141592px;
+    pointer-events: none;
 }
 
 .inputContainer input {
@@ -78,4 +81,8 @@ input:focus {
 }
 .inputContainer img:hover {
     cursor: pointer;
+}
+
+.result p {
+    margin: 5vw;
 }
