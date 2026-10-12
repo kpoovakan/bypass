@@ -1,1 +1,20 @@
 @charset "UTF-8";
+:root {
+    --colorBackground: #011306;
+    --colorForeground: #e4f1e7;
+    --colorAccent: #d7eadb;
+}
+body {
+    background-color: var(--colorBackground);
+    color: var(--colorForeground);
+    font-family: "Kode Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+iframe {
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: none;
+}
