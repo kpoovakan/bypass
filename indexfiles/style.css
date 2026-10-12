@@ -11,12 +11,35 @@ body {
     font-family: var(--font);
     font-weight: 500;
     font-style: normal;
+    font-size: 13px;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    margin: 3vh;
+.heading {
+    display: flex;
+    width: 100vw;
+    padding: 5vw;
+    gap: 31px;
+    box-sizing: border-box;
+    a:link, a:visited {
+        color: var(--colorForeground);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        margin: 0;
+    }
+    a:hover {
+        cursor: pointer;
+    }
+}
+.heading h1 {
+    flex-grow: 1;
+    font-size: 71px;
+    margin: 0;
+}
+.heading h1:hover {
+    cursor: pointer;
 }
 
 iframe {
@@ -33,4 +56,15 @@ input {
     background-color: var(--colorForeground);
     color: var(--colorBackground);
     font-family: var(--font);
+    width: 90vw;
+    padding: 13px;
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+.inputContainer {
+    width: 100vw;
+    padding: 5vw;
+    box-sizing: border-box;
 }
