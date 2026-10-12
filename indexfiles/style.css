@@ -38,9 +38,6 @@ body {
     font-size: 71px;
     margin: 0;
 }
-.heading h1:hover {
-    cursor: pointer;
-}
 
 iframe {
     background-color: white;
